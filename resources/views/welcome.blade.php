@@ -24,15 +24,16 @@
                     <option value="ar">Arabic</option>
                     <option value="fr">French</option>
                     <option value="en">English</option>
-                </select>                               
+                </select>
                   {{ __('messages.welcome') }}
+                  @lang('messages.welcome')
             </div>
         </div>
     </body>
     <script>
         var option = document.querySelector('select')
         option.addEventListener('change', function(){
-            window.location.href = "/" + this.value; 
+            window.location.href = "/" + this.value;
         })
     </script>
 </html>
